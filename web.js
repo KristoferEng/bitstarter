@@ -3,9 +3,10 @@ var fs=require('fs');
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
-  var res=fs.readFileSync('index.html');
-  res=res.toString('utf8');
-  response.send(res);
+//  var res=fs.readFileSync('index.html');
+//  res=res.toString('utf8');
+//  response.send(res);
+  response.send('Hello World!');
 });
 app.use(express.static(__dirname + '/statics'));
 
