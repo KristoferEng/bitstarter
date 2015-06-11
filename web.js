@@ -6,7 +6,7 @@ app.get('/', function(request, response) {
 //  var res=fs.readFileSync('index.html');
 //  res=res.toString('utf8');
 //  response.send(res);
-  response.send('Hello World!');
+  response.send('Hello World 2!');
 });
 app.use(express.static(__dirname + '/statics'));
 
